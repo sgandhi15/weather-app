@@ -14,7 +14,7 @@ form.addEventListener('submit', (event) =>{
     msg3.textContent = ''
     msg4.textContent = ''
     msg5.textContent = ''
-    fetch('http://localhost:3000/weather?location=' + search).then((responce) => {
+    fetch('/weather?location=' + search).then((responce) => {
         responce.json().then((data) => {
             if(data.error) {
                 msg1.textContent = data.error
