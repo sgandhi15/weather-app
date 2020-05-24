@@ -1,0 +1,22 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node ./index.js",
+    "dev" : "nodemon ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

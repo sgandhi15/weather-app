@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/imgs/icons8-partly-cloudy-day-500.png">
+    <title>Weather-App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/images/icons8-partly-cloudy-day-50.png" width="30" height="30" alt="">Weather-app
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="#">Forecast<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Help</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
+                <a class="nav-item nav-link" href="#">About</a>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 25rem;">
+                <div class="card-header">
+                    WEATHER-APP
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Weather Info</label>
+                            <input type="text" class="form-control" id="location" aria-describedby="emailHelp"
+                                placeholder="Enter Location">
+                            <small id="emailHelp" class="form-text text-muted">We'll try to find you as accurate
+                                info as possible.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                        <p>{{error}}</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <p class="text-center" id="message-1"></p>
+            <p class="text-center" id="message-2"></p>
+            <p class="text-center" id="message-3"></p>
+            <p class="text-center" id="message-4"></p>
+            <p class="text-center" id="message-5"></p>
+        </div>
+    </div class="container">
+    <div>
+        <p class="text-center display-4">How to use...?</p>
+        <p class="text-center">1. Enter Your Location</p>
+        <p class="text-center">2. Clik on search</p>
+        <p class="text-center">3. Hope that no tornado is making way towards your home</p>
+        <p class="text-center">4. If you don't find your appropiate location tweak your search keyword</p>
+        <p class="text-center">5. Else wait for new cities to be added</p>
+        <p class="text-center">6. Thanks for patients</p>
+    </div>
+    <div class="container">
+        <p class="text-center display-4">Contact Me</p>
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td colspan="2">
+                                <p class="text-center">Email:- gandhi.sarthak15@gmail.com</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="/images/facebook.svg" class="img-fluid" alt="Responsive image"></td>
+                            <td><a href="https://www.facebook.com/sarthak.gandhi.3745/">@sarthak.gandhi.3375</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/instagram-logo.svg" class="img-fluid" alt="Responsive image"></td>
+                            <td><a href="https://www.instagram.com/sarthakgandhi_/">@sarthakgandhi_</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/linkedin.svg" class="img-fluid" alt="Responsive image"></td>
+                            <td><a href="https://www.linkedin.com/in/sarthak-gandhi-a72469190/">@sarthakgandhi</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/twitter.svg" class="img-fluid" alt="Responsive image"></td>
+                            <td><a href="https://twitter.com/sarthakgandhi_">@sarthakgandhi</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <img src="images/IMG_2820.jpg" alt="Responsive image" width="380px">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="text-center display-4">About this project...!</p>
+        <p class="text-center">I made this project just for fun and was trying to learn new things. If you find any
+            problem or improvement regarding this project feel free to contact me through social media or you can mail
+            me.</p>
+    </div>
+    <footer class="page-footer font-small special-color-dark pt-4">
+        <div class="footer-copyright text-center py-3">&copy; 2020 Copyright:
+            <a href="https://mdbootstrap.com/">Sarthak Gandhi</a>
+        </div>
+    </footer>
+    <script src="/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
