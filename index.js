@@ -4,7 +4,7 @@ const forecast = require('./utils/forecast')
 
 const app = express()
 
-app.set('port' , process.env.PORT || 3000)
+port = process.env.PORT || 3000
 
 app.use(express.static(path.join(__dirname , '/public'))); 
 
@@ -37,6 +37,6 @@ app.get('/*' , (req , res) => {
     res.render('index')
 })
 
-app.listen(PORT , () => {
+app.listen(port , () => {
     console.log('Server started......!')
 })
