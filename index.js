@@ -23,7 +23,7 @@ app.get('/weather', (req,res) => {
         res.send({ main : body.weather[0].main ,
             lat : body.coord.lat ,
             lon : body.coord.lon ,
-            temp : body.main.temp,
+            temp : parseFloat(body.main.temp - 273.00).toPrecision(3),
             wind : body.wind.speed,
             windDegree : body.wind.deg,
             location: body.name,

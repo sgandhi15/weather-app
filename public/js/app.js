@@ -23,7 +23,7 @@ form.addEventListener('submit', (event) =>{
                 msg4.textContent = ''
                 msg5.textContent = ''
             } else{
-                msg1.textContent = 'Your weather is ' + data.main + '.' + 'Your current tempreture is ' + data.temp + ' K.'
+                msg1.textContent = 'Your weather looks like ' + data.main + '.' + 'Your current tempreture is ' + data.temp + ' C.'
                 msg2.textContent = 'Latitude : ' + data.lat +'.' + 'Longitude : ' + data.lon
                 msg3.textContent = 'Wind speed is ' + data.wind + ' mile/h and degree of wind flow is in ' + data.windDegree + ' degree.'
                 msg4.textContent = 'Air pressure is currently is ' + data.pressure + ' mbars.'
