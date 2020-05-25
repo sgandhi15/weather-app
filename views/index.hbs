@@ -12,7 +12,7 @@
 </head>
 
 <body class="mybody">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="/images/icons8-partly-cloudy-day-50.png" width="30" height="30" alt="">Weather-app
         </a>
@@ -22,13 +22,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="#">Forecast<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Help</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
-                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link" href="#forecast">Forecast<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#help">Help</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+                <a class="nav-item nav-link" href="#about">About</a>
             </div>
         </div>
     </nav>
+    <a id="forecast"></a>
     <div class="row" style="margin-right: 0px;">
         <div class="col">
             <div class="card" style="width: 25rem;">
@@ -58,6 +59,7 @@
             <p class="text-center" id="message-5"></p>
         </div>
     </div class="container">
+    <a id="help"></a>
     <div>
         <p class="text-center display-4">How to use...?</p>
         <p class="text-center">1. Enter Your Location</p>
@@ -67,6 +69,7 @@
         <p class="text-center">5. Else wait for new cities to be added</p>
         <p class="text-center">6. Thanks for patients</p>
     </div>
+    <a id="contact"></a>
     <div class="container">
         <p class="text-center display-4">Contact Me</p>
         <div class="row">
@@ -82,19 +85,19 @@
                     <tbody>
                         <tr>
                             <td><img src="/images/facebook.svg" class="img-fluid" alt="Responsive image"></td>
-                            <td><a href="https://www.facebook.com/sarthak.gandhi.3745/">@sarthak.gandhi.3375</a></td>
+                            <td><a href="https://www.facebook.com/sarthak.gandhi.3745/" target="_blank">@sarthak.gandhi.3375</a></td>
                         </tr>
                         <tr>
                             <td><img src="/images/instagram-logo.svg" class="img-fluid" alt="Responsive image"></td>
-                            <td><a href="https://www.instagram.com/sarthakgandhi_/">@sarthakgandhi_</a></td>
+                            <td><a href="https://www.instagram.com/sarthakgandhi_/" target="_blank">@sarthakgandhi_</a></td>
                         </tr>
                         <tr>
                             <td><img src="/images/linkedin.svg" class="img-fluid" alt="Responsive image"></td>
-                            <td><a href="https://www.linkedin.com/in/sarthak-gandhi-a72469190/">@sarthakgandhi</a></td>
+                            <td><a href="https://www.linkedin.com/in/sarthak-gandhi-a72469190/" target="_blank">@sarthakgandhi</a></td>
                         </tr>
                         <tr>
                             <td><img src="/images/twitter.svg" class="img-fluid" alt="Responsive image"></td>
-                            <td><a href="https://twitter.com/sarthakgandhi_">@sarthakgandhi</a></td>
+                            <td><a href="https://twitter.com/sarthakgandhi_" target="_blank">@sarthakgandhi</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -104,6 +107,7 @@
             </div>
         </div>
     </div>
+    <a id="about"></a>
     <div class="container">
         <p class="text-center display-4">About this project...!</p>
         <p class="text-center">I made this project just for fun and was trying to learn new things. If you find any
